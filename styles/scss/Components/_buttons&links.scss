@@ -1,0 +1,67 @@
+@import "./../Abstracts/variables";
+@import "./../Abstracts/functions";
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+    color: color("primary");
+    text-decoration: none; 
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover{
+    color: lighten(color("primary"), 20%); 
+    text-decoration: underline;
+    }
+}
+  
+  
+  /* Buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: color("gray");
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid color("gray");
+    cursor: pointer;
+    box-sizing: border-box; 
+    
+    &:hover,:focus {
+    color: color("dark-gray");
+    border-color: color("dark-gray");
+    outline: 0;
+    }
+}
+
+  @each $name, $color in $colors {
+    .button.button-#{$name},
+    button.button-#{$name},
+    input[type="submit"].button-#{$name},
+    input[type="reset"].button-#{$name},
+    input[type="button"].button-#{$name} {
+      color: #FFF;
+      background-color: $color;
+      border-color: $color; 
+
+        &:hover,:focus {
+        color: #FFF;
+        background-color: lighten(color($name), 20%);
+        border-color: lighten(color($name), 20%);
+      }}
+
+  }
