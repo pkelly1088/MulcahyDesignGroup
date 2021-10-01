@@ -1,0 +1,47 @@
+@import "./../Abstracts/variables";
+@import "./../Abstracts/functions";
+@import "./../Abstracts/mixins";
+
+// * {
+//   border: 1px red dashed;
+// }
+
+html {
+  background-color: color("white");
+}
+
+body {
+  background-color: color("white");
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 0rem;
+  padding: 2rem;
+  padding-top: 101px;
+  max-width: 1200px;
+  background-color: color("white");
+
+  @include tablet {
+    padding-top: 117px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  > div {
+    background: color("primary");
+    padding: 1rem;
+
+    &::before {
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+  }
+}
