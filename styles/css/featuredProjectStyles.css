@@ -894,6 +894,18 @@ nav .nav-sections .nav-links li a:hover::before, nav .nav-sections .nav-links li
   width: 100%;
 }
 
+nav .nav-sections .nav-links li .active::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0.75rem;
+  left: 0;
+  visibility: visible;
+  width: 100%;
+  background-color: #023668;
+}
+
 nav .nav-sections .social-links {
   display: flex;
   align-items: center;

@@ -2,9 +2,6 @@
 @import "./../Abstracts/functions";
 @import "./../Abstracts/mixins";
 
-// * {
-//   border: 1px red dashed;
-// }
 header {
   max-width: 100%;
   background-color: color("white");
@@ -75,6 +72,7 @@ nav {
       li {
         margin: 0 1.5rem;
         padding: 1rem 0;
+
         a {
           padding: 1rem 0;
           position: relative;
@@ -101,6 +99,19 @@ nav {
           &:focus::before {
             visibility: visible;
             width: 100%;
+          }
+        }
+        .active {
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0.75rem;
+            left: 0;
+            visibility: visible;
+            width: 100%;
+            background-color: color("primary");
           }
         }
       }
