@@ -2,6 +2,10 @@
 @import "./../Abstracts/functions";
 @import "./../Abstracts/mixins";
 
+// * {
+//   border: 1px red dashed;
+// }
+
 body {
   background-color: color("white");
 }
@@ -36,13 +40,27 @@ main {
   margin-left: auto;
 
   > div {
-    background: color("primary");
-    padding: 1rem;
+    background: color("white");
+    display: grid;
 
     &::before {
       content: "";
       padding-bottom: 100%;
       display: block;
+    }
+
+    &::before,
+    > a {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    > a {
+      img {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
