@@ -93,7 +93,7 @@ nav {
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
-            background-color: color("primary");
+            background-color: color("accent");
           }
 
           &:hover::before,
@@ -112,7 +112,7 @@ nav {
             left: 0;
             visibility: visible;
             width: 100%;
-            background-color: color("primary");
+            background-color: color("accent");
           }
         }
       }

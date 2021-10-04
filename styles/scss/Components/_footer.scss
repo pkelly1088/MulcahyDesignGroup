@@ -2,6 +2,10 @@
 @import "./../Abstracts/functions";
 @import "./../Abstracts/mixins";
 
+// * {
+//   border: red dashed 1px;
+// }
+
 footer {
   z-index: 100;
   position: sticky;
@@ -29,18 +33,35 @@ footer {
     }
 
     .title {
-      font-weight: 600;
+      font-weight: 200;
+      font-size: 2.4rem;
+      position: relative;
+      width: fit-content;
+      margin-bottom: 0.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0.2rem;
+        left: 0;
+        visibility: visible;
+        width: 100%;
+        background-color: color("accent");
+      }
     }
 
     .footer-contact {
       display: flex;
       flex-direction: column;
+      align-items: center;
       flex-wrap: wrap;
       flex-basis: 100%;
-      max-width: 100%;
       order: 1;
 
       @include tablet {
+        align-items: flex-start;
         flex-wrap: row;
         flex-basis: 33%;
       }
@@ -87,7 +108,6 @@ footer {
       flex-basis: 100%;
       flex-wrap: wrap;
       align-items: center;
-      max-height: 100%;
       margin-top: 2rem;
 
       @include tablet {
