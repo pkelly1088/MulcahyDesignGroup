@@ -1,0 +1,203 @@
+@import "./../Abstracts/variables";
+@import "./../Abstracts/functions";
+@import "./../Abstracts/mixins";
+
+header {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  color: color("primary");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  backdrop-filter: blur(2px) saturate(181%);
+  -webkit-backdrop-filter: blur(2px) saturate(181%);
+  background-color: rgba(255, 255, 255, 0.55);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  @include tablet {
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      display: flex;
+      align-self: center;
+      height: 60px;
+    }
+  }
+
+  .nav-sections {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include tablet {
+        flex-direction: row;
+        padding-left: 4rem;
+      }
+
+      li {
+        margin: 0 1.5rem;
+        padding: 1rem 0;
+
+        a {
+          padding: 1rem 0;
+          position: relative;
+          color: color("primary");
+          font-weight: 400;
+          text-decoration: none;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0.75rem;
+            left: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            background-color: color("accent");
+          }
+
+          &:hover::before,
+          &:focus::before {
+            visibility: visible;
+            width: 100%;
+          }
+        }
+        .active {
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0.75rem;
+            left: 0;
+            visibility: visible;
+            width: 100%;
+            background-color: color("accent");
+          }
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-top: -18px;
+
+      @include tablet {
+        justify-self: flex-end;
+        margin-top: 0px;
+      }
+      a {
+        margin: 0 1.5rem;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 35px;
+          filter: invert(17%) sepia(23%) saturate(4366%) hue-rotate(190deg)
+            brightness(98%) contrast(104%);
+
+          &:hover,
+          &:focus {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2.8rem;
+
+    @include tablet {
+      display: hidden;
+    }
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: color("primary");
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .hamburger.responsive .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.responsive .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.responsive .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-sections.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.3s;
+  }
+}

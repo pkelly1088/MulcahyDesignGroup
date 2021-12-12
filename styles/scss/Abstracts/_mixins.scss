@@ -10,4 +10,10 @@
   @media (min-width: #{$tablet}) {
     @content;
   }
-} ;
+}
+
+@mixin phone {
+  @media (min-width: #{$phone}) {
+    @content;
+  }
+}

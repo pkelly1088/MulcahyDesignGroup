@@ -365,7 +365,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: #222;
+  color: #023668;
 }
 
 /* Typography
@@ -383,61 +383,39 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.2;
-  letter-spacing: -0.1rem;
-}
-
-h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
 
-h3 {
+h2 {
   font-size: 3rem;
   line-height: 1.3;
   letter-spacing: -0.1rem;
 }
 
-h4 {
+h3 {
   font-size: 2.4rem;
   line-height: 1.35;
+  letter-spacing: -0.1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.5;
   letter-spacing: -0.08rem;
 }
 
 h5 {
-  font-size: 1.8rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.6;
   letter-spacing: -0.05rem;
 }
 
 h6 {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.7;
   letter-spacing: 0;
-}
-
-/* Larger than phablet */
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
 }
 
 p {
@@ -468,23 +446,24 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #6c757d;
+  color: #3f91f9;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #6c757d;
+  border-radius: 0px;
+  border: 1px solid #3f91f9;
   cursor: pointer;
   box-sizing: border-box;
 }
 
-.button:hover, .button :focus,
+.button:hover,
+.button :focus,
 button:hover,
 button :focus,
 input[type="submit"]:hover,
@@ -493,7 +472,11 @@ input[type="reset"]:hover,
 input[type="reset"] :focus,
 input[type="button"]:hover,
 input[type="button"] :focus {
+  color: #fff;
+  border-color: #3f91f9;
+  background-color: #3f91f9;
   outline: 0;
+  transition: ease-in 0.25s;
 }
 
 .button.button-primary,
@@ -501,12 +484,13 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
+  color: #fff;
   background-color: #023668;
   border-color: #023668;
 }
 
-.button.button-primary:hover, .button.button-primary :focus,
+.button.button-primary:hover,
+.button.button-primary :focus,
 button.button-primary:hover,
 button.button-primary :focus,
 input[type="submit"].button-primary:hover,
@@ -515,7 +499,7 @@ input[type="reset"].button-primary:hover,
 input[type="reset"].button-primary :focus,
 input[type="button"].button-primary:hover,
 input[type="button"].button-primary :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #046acc;
   border-color: #046acc;
 }
@@ -525,12 +509,13 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-  color: #FFF;
-  background-color: #F1F1E6;
-  border-color: #F1F1E6;
+  color: #fff;
+  background-color: #f1f1e6;
+  border-color: #f1f1e6;
 }
 
-.button.button-secondary:hover, .button.button-secondary :focus,
+.button.button-secondary:hover,
+.button.button-secondary :focus,
 button.button-secondary:hover,
 button.button-secondary :focus,
 input[type="submit"].button-secondary:hover,
@@ -539,7 +524,7 @@ input[type="reset"].button-secondary:hover,
 input[type="reset"].button-secondary :focus,
 input[type="button"].button-secondary:hover,
 input[type="button"].button-secondary :focus {
-  color: #FFF;
+  color: #fff;
   background-color: white;
   border-color: white;
 }
@@ -549,12 +534,13 @@ button.button-accent,
 input[type="submit"].button-accent,
 input[type="reset"].button-accent,
 input[type="button"].button-accent {
-  color: #FFF;
-  background-color: #3F91F9;
-  border-color: #3F91F9;
+  color: #fff;
+  background-color: #3f91f9;
+  border-color: #3f91f9;
 }
 
-.button.button-accent:hover, .button.button-accent :focus,
+.button.button-accent:hover,
+.button.button-accent :focus,
 button.button-accent:hover,
 button.button-accent :focus,
 input[type="submit"].button-accent:hover,
@@ -563,7 +549,7 @@ input[type="reset"].button-accent:hover,
 input[type="reset"].button-accent :focus,
 input[type="button"].button-accent:hover,
 input[type="button"].button-accent :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #a2cafc;
   border-color: #a2cafc;
 }
@@ -573,12 +559,13 @@ button.button-success,
 input[type="submit"].button-success,
 input[type="reset"].button-success,
 input[type="button"].button-success {
-  color: #FFF;
+  color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
 
-.button.button-success:hover, .button.button-success :focus,
+.button.button-success:hover,
+.button.button-success :focus,
 button.button-success:hover,
 button.button-success :focus,
 input[type="submit"].button-success:hover,
@@ -587,7 +574,7 @@ input[type="reset"].button-success:hover,
 input[type="reset"].button-success :focus,
 input[type="button"].button-success:hover,
 input[type="button"].button-success :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #5dd879;
   border-color: #5dd879;
 }
@@ -597,12 +584,13 @@ button.button-info,
 input[type="submit"].button-info,
 input[type="reset"].button-info,
 input[type="button"].button-info {
-  color: #FFF;
+  color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
 
-.button.button-info:hover, .button.button-info :focus,
+.button.button-info:hover,
+.button.button-info :focus,
 button.button-info:hover,
 button.button-info :focus,
 input[type="submit"].button-info:hover,
@@ -611,7 +599,7 @@ input[type="reset"].button-info:hover,
 input[type="reset"].button-info :focus,
 input[type="button"].button-info:hover,
 input[type="button"].button-info :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #4cd3e9;
   border-color: #4cd3e9;
 }
@@ -621,12 +609,13 @@ button.button-warning,
 input[type="submit"].button-warning,
 input[type="reset"].button-warning,
 input[type="button"].button-warning {
-  color: #FFF;
+  color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
 }
 
-.button.button-warning:hover, .button.button-warning :focus,
+.button.button-warning:hover,
+.button.button-warning :focus,
 button.button-warning:hover,
 button.button-warning :focus,
 input[type="submit"].button-warning:hover,
@@ -635,7 +624,7 @@ input[type="reset"].button-warning:hover,
 input[type="reset"].button-warning :focus,
 input[type="button"].button-warning:hover,
 input[type="button"].button-warning :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #ffdb6d;
   border-color: #ffdb6d;
 }
@@ -645,12 +634,13 @@ button.button-danger,
 input[type="submit"].button-danger,
 input[type="reset"].button-danger,
 input[type="button"].button-danger {
-  color: #FFF;
+  color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
 
-.button.button-danger:hover, .button.button-danger :focus,
+.button.button-danger:hover,
+.button.button-danger :focus,
 button.button-danger:hover,
 button.button-danger :focus,
 input[type="submit"].button-danger:hover,
@@ -659,7 +649,7 @@ input[type="reset"].button-danger:hover,
 input[type="reset"].button-danger :focus,
 input[type="button"].button-danger:hover,
 input[type="button"].button-danger :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #eb8c95;
   border-color: #eb8c95;
 }
@@ -669,12 +659,13 @@ button.button-light,
 input[type="submit"].button-light,
 input[type="reset"].button-light,
 input[type="button"].button-light {
-  color: #FFF;
+  color: #fff;
   background-color: #e6f4f1;
   border-color: #e6f4f1;
 }
 
-.button.button-light:hover, .button.button-light :focus,
+.button.button-light:hover,
+.button.button-light :focus,
 button.button-light:hover,
 button.button-light :focus,
 input[type="submit"].button-light:hover,
@@ -683,7 +674,7 @@ input[type="reset"].button-light:hover,
 input[type="reset"].button-light :focus,
 input[type="button"].button-light:hover,
 input[type="button"].button-light :focus {
-  color: #FFF;
+  color: #fff;
   background-color: white;
   border-color: white;
 }
@@ -693,12 +684,13 @@ button.button-dark,
 input[type="submit"].button-dark,
 input[type="reset"].button-dark,
 input[type="button"].button-dark {
-  color: #FFF;
+  color: #fff;
   background-color: #3f475b;
   border-color: #3f475b;
 }
 
-.button.button-dark:hover, .button.button-dark :focus,
+.button.button-dark:hover,
+.button.button-dark :focus,
 button.button-dark:hover,
 button.button-dark :focus,
 input[type="submit"].button-dark:hover,
@@ -707,7 +699,7 @@ input[type="reset"].button-dark:hover,
 input[type="reset"].button-dark :focus,
 input[type="button"].button-dark:hover,
 input[type="button"].button-dark :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #697697;
   border-color: #697697;
 }
@@ -717,12 +709,13 @@ button.button-white,
 input[type="submit"].button-white,
 input[type="reset"].button-white,
 input[type="button"].button-white {
-  color: #FFF;
+  color: #fff;
   background-color: #fff;
   border-color: #fff;
 }
 
-.button.button-white:hover, .button.button-white :focus,
+.button.button-white:hover,
+.button.button-white :focus,
 button.button-white:hover,
 button.button-white :focus,
 input[type="submit"].button-white:hover,
@@ -731,7 +724,7 @@ input[type="reset"].button-white:hover,
 input[type="reset"].button-white :focus,
 input[type="button"].button-white:hover,
 input[type="button"].button-white :focus {
-  color: #FFF;
+  color: #fff;
   background-color: white;
   border-color: white;
 }
@@ -741,12 +734,13 @@ button.button-gray,
 input[type="submit"].button-gray,
 input[type="reset"].button-gray,
 input[type="button"].button-gray {
-  color: #FFF;
+  color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
 }
 
-.button.button-gray:hover, .button.button-gray :focus,
+.button.button-gray:hover,
+.button.button-gray :focus,
 button.button-gray:hover,
 button.button-gray :focus,
 input[type="submit"].button-gray:hover,
@@ -755,7 +749,7 @@ input[type="reset"].button-gray:hover,
 input[type="reset"].button-gray :focus,
 input[type="button"].button-gray:hover,
 input[type="button"].button-gray :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #a1a8ae;
   border-color: #a1a8ae;
 }
@@ -765,12 +759,13 @@ button.button-gray-dark,
 input[type="submit"].button-gray-dark,
 input[type="reset"].button-gray-dark,
 input[type="button"].button-gray-dark {
-  color: #FFF;
+  color: #fff;
   background-color: #343a40;
   border-color: #343a40;
 }
 
-.button.button-gray-dark:hover, .button.button-gray-dark :focus,
+.button.button-gray-dark:hover,
+.button.button-gray-dark :focus,
 button.button-gray-dark:hover,
 button.button-gray-dark :focus,
 input[type="submit"].button-gray-dark:hover,
@@ -779,7 +774,7 @@ input[type="reset"].button-gray-dark:hover,
 input[type="reset"].button-gray-dark :focus,
 input[type="button"].button-gray-dark:hover,
 input[type="button"].button-gray-dark :focus {
-  color: #FFF;
+  color: #fff;
   background-color: #626d78;
   border-color: #626d78;
 }
@@ -979,7 +974,7 @@ nav .nav-sections .nav-links li a::before {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  background-color: #3F91F9;
+  background-color: #3f91f9;
 }
 
 nav .nav-sections .nav-links li a:hover::before, nav .nav-sections .nav-links li a:focus::before {
@@ -996,7 +991,7 @@ nav .nav-sections .nav-links li .active::before {
   left: 0;
   visibility: visible;
   width: 100%;
-  background-color: #3F91F9;
+  background-color: #3f91f9;
 }
 
 nav .nav-sections .social-links {
@@ -1125,7 +1120,7 @@ footer .footer-container .title::before {
   left: 0;
   visibility: visible;
   width: 100%;
-  background-color: #3F91F9;
+  background-color: #3f91f9;
 }
 
 footer .footer-container .footer-contact {
