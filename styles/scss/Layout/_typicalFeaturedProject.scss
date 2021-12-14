@@ -33,20 +33,20 @@ main {
   }
 
   .column-two-thirds {
-    flex: 100%;
+    @include flex(100%);
     padding-top: 1rem;
 
     @include tablet {
-      flex: 66%;
+      @include flex(66%);
     }
   }
 
   .column-one-third {
-    flex: 100%;
+    @include flex(100%);
     padding-top: 1rem;
 
     @include tablet {
-      flex: 32%;
+      @include flex(32%);
     }
   }
 
@@ -58,22 +58,22 @@ main {
 
   .row {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+    @include justify-content(center);
     column-gap: 1rem;
 
-    @include phone {
-      flex-direction: row;
+    @include tablet {
+      @include flex-direction(row);
     }
 
     .column-half {
-      flex: 100%;
+      @include flex(100%);
       padding-top: 1rem;
 
       @include tablet {
-        flex: 49%;
+        @include flex(49%);
       }
     }
 
@@ -87,19 +87,20 @@ main {
   margin-top: 0.5rem;
 
   .column-two-thirds {
-    order: 2;
-    @include phone {
-      order: initial;
-      flex: 66%;
+    @include flex-order(2);
+
+    @include tablet {
+      @include flex-order(initial);
+      @include flex(66%);
     }
   }
 
   .column-one-third {
-    order: 1;
+    @include flex-order(1);
 
-    @include phone {
-      order: initial;
-      flex: 32%;
+    @include tablet {
+      @include flex-order(initial);
+      @include flex(32%);
     }
   }
 

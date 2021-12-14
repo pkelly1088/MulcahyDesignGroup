@@ -476,307 +476,10 @@ input[type="button"] :focus {
   border-color: #3f91f9;
   background-color: #3f91f9;
   outline: 0;
-  transition: ease-in 0.25s;
-}
-
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #fff;
-  background-color: #023668;
-  border-color: #023668;
-}
-
-.button.button-primary:hover,
-.button.button-primary :focus,
-button.button-primary:hover,
-button.button-primary :focus,
-input[type="submit"].button-primary:hover,
-input[type="submit"].button-primary :focus,
-input[type="reset"].button-primary:hover,
-input[type="reset"].button-primary :focus,
-input[type="button"].button-primary:hover,
-input[type="button"].button-primary :focus {
-  color: #fff;
-  background-color: #046acc;
-  border-color: #046acc;
-}
-
-.button.button-secondary,
-button.button-secondary,
-input[type="submit"].button-secondary,
-input[type="reset"].button-secondary,
-input[type="button"].button-secondary {
-  color: #fff;
-  background-color: #f1f1e6;
-  border-color: #f1f1e6;
-}
-
-.button.button-secondary:hover,
-.button.button-secondary :focus,
-button.button-secondary:hover,
-button.button-secondary :focus,
-input[type="submit"].button-secondary:hover,
-input[type="submit"].button-secondary :focus,
-input[type="reset"].button-secondary:hover,
-input[type="reset"].button-secondary :focus,
-input[type="button"].button-secondary:hover,
-input[type="button"].button-secondary :focus {
-  color: #fff;
-  background-color: white;
-  border-color: white;
-}
-
-.button.button-accent,
-button.button-accent,
-input[type="submit"].button-accent,
-input[type="reset"].button-accent,
-input[type="button"].button-accent {
-  color: #fff;
-  background-color: #3f91f9;
-  border-color: #3f91f9;
-}
-
-.button.button-accent:hover,
-.button.button-accent :focus,
-button.button-accent:hover,
-button.button-accent :focus,
-input[type="submit"].button-accent:hover,
-input[type="submit"].button-accent :focus,
-input[type="reset"].button-accent:hover,
-input[type="reset"].button-accent :focus,
-input[type="button"].button-accent:hover,
-input[type="button"].button-accent :focus {
-  color: #fff;
-  background-color: #a2cafc;
-  border-color: #a2cafc;
-}
-
-.button.button-success,
-button.button-success,
-input[type="submit"].button-success,
-input[type="reset"].button-success,
-input[type="button"].button-success {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-.button.button-success:hover,
-.button.button-success :focus,
-button.button-success:hover,
-button.button-success :focus,
-input[type="submit"].button-success:hover,
-input[type="submit"].button-success :focus,
-input[type="reset"].button-success:hover,
-input[type="reset"].button-success :focus,
-input[type="button"].button-success:hover,
-input[type="button"].button-success :focus {
-  color: #fff;
-  background-color: #5dd879;
-  border-color: #5dd879;
-}
-
-.button.button-info,
-button.button-info,
-input[type="submit"].button-info,
-input[type="reset"].button-info,
-input[type="button"].button-info {
-  color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
-}
-
-.button.button-info:hover,
-.button.button-info :focus,
-button.button-info:hover,
-button.button-info :focus,
-input[type="submit"].button-info:hover,
-input[type="submit"].button-info :focus,
-input[type="reset"].button-info:hover,
-input[type="reset"].button-info :focus,
-input[type="button"].button-info:hover,
-input[type="button"].button-info :focus {
-  color: #fff;
-  background-color: #4cd3e9;
-  border-color: #4cd3e9;
-}
-
-.button.button-warning,
-button.button-warning,
-input[type="submit"].button-warning,
-input[type="reset"].button-warning,
-input[type="button"].button-warning {
-  color: #fff;
-  background-color: #ffc107;
-  border-color: #ffc107;
-}
-
-.button.button-warning:hover,
-.button.button-warning :focus,
-button.button-warning:hover,
-button.button-warning :focus,
-input[type="submit"].button-warning:hover,
-input[type="submit"].button-warning :focus,
-input[type="reset"].button-warning:hover,
-input[type="reset"].button-warning :focus,
-input[type="button"].button-warning:hover,
-input[type="button"].button-warning :focus {
-  color: #fff;
-  background-color: #ffdb6d;
-  border-color: #ffdb6d;
-}
-
-.button.button-danger,
-button.button-danger,
-input[type="submit"].button-danger,
-input[type="reset"].button-danger,
-input[type="button"].button-danger {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-}
-
-.button.button-danger:hover,
-.button.button-danger :focus,
-button.button-danger:hover,
-button.button-danger :focus,
-input[type="submit"].button-danger:hover,
-input[type="submit"].button-danger :focus,
-input[type="reset"].button-danger:hover,
-input[type="reset"].button-danger :focus,
-input[type="button"].button-danger:hover,
-input[type="button"].button-danger :focus {
-  color: #fff;
-  background-color: #eb8c95;
-  border-color: #eb8c95;
-}
-
-.button.button-light,
-button.button-light,
-input[type="submit"].button-light,
-input[type="reset"].button-light,
-input[type="button"].button-light {
-  color: #fff;
-  background-color: #e6f4f1;
-  border-color: #e6f4f1;
-}
-
-.button.button-light:hover,
-.button.button-light :focus,
-button.button-light:hover,
-button.button-light :focus,
-input[type="submit"].button-light:hover,
-input[type="submit"].button-light :focus,
-input[type="reset"].button-light:hover,
-input[type="reset"].button-light :focus,
-input[type="button"].button-light:hover,
-input[type="button"].button-light :focus {
-  color: #fff;
-  background-color: white;
-  border-color: white;
-}
-
-.button.button-dark,
-button.button-dark,
-input[type="submit"].button-dark,
-input[type="reset"].button-dark,
-input[type="button"].button-dark {
-  color: #fff;
-  background-color: #3f475b;
-  border-color: #3f475b;
-}
-
-.button.button-dark:hover,
-.button.button-dark :focus,
-button.button-dark:hover,
-button.button-dark :focus,
-input[type="submit"].button-dark:hover,
-input[type="submit"].button-dark :focus,
-input[type="reset"].button-dark:hover,
-input[type="reset"].button-dark :focus,
-input[type="button"].button-dark:hover,
-input[type="button"].button-dark :focus {
-  color: #fff;
-  background-color: #697697;
-  border-color: #697697;
-}
-
-.button.button-white,
-button.button-white,
-input[type="submit"].button-white,
-input[type="reset"].button-white,
-input[type="button"].button-white {
-  color: #fff;
-  background-color: #fff;
-  border-color: #fff;
-}
-
-.button.button-white:hover,
-.button.button-white :focus,
-button.button-white:hover,
-button.button-white :focus,
-input[type="submit"].button-white:hover,
-input[type="submit"].button-white :focus,
-input[type="reset"].button-white:hover,
-input[type="reset"].button-white :focus,
-input[type="button"].button-white:hover,
-input[type="button"].button-white :focus {
-  color: #fff;
-  background-color: white;
-  border-color: white;
-}
-
-.button.button-gray,
-button.button-gray,
-input[type="submit"].button-gray,
-input[type="reset"].button-gray,
-input[type="button"].button-gray {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-.button.button-gray:hover,
-.button.button-gray :focus,
-button.button-gray:hover,
-button.button-gray :focus,
-input[type="submit"].button-gray:hover,
-input[type="submit"].button-gray :focus,
-input[type="reset"].button-gray:hover,
-input[type="reset"].button-gray :focus,
-input[type="button"].button-gray:hover,
-input[type="button"].button-gray :focus {
-  color: #fff;
-  background-color: #a1a8ae;
-  border-color: #a1a8ae;
-}
-
-.button.button-gray-dark,
-button.button-gray-dark,
-input[type="submit"].button-gray-dark,
-input[type="reset"].button-gray-dark,
-input[type="button"].button-gray-dark {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
-}
-
-.button.button-gray-dark:hover,
-.button.button-gray-dark :focus,
-button.button-gray-dark:hover,
-button.button-gray-dark :focus,
-input[type="submit"].button-gray-dark:hover,
-input[type="submit"].button-gray-dark :focus,
-input[type="reset"].button-gray-dark:hover,
-input[type="reset"].button-gray-dark :focus,
-input[type="button"].button-gray-dark:hover,
-input[type="button"].button-gray-dark :focus {
-  color: #fff;
-  background-color: #626d78;
-  border-color: #626d78;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 body {
@@ -808,16 +511,28 @@ main {
 }
 
 .grid {
-  display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
 
+@supports (display: grid) {
+  .grid {
+    display: grid;
+  }
+}
+
 .grid > div {
   background: #fff;
-  display: grid;
+  display: -ms-grid;
+}
+
+@supports (display: grid) {
+  .grid > div {
+    display: grid;
+  }
 }
 
 .grid > div::before {
@@ -832,9 +547,15 @@ main {
 }
 
 .grid > div > a {
-  display: grid;
+  display: -ms-grid;
   text-decoration: none;
   color: #fff;
+}
+
+@supports (display: grid) {
+  .grid > div > a {
+    display: grid;
+  }
 }
 
 .grid > div > a img {
@@ -846,7 +567,7 @@ main {
 }
 
 .grid > div > a .overlay {
-  display: grid;
+  display: -ms-grid;
   justify-content: center;
   align-items: center;
   grid-area: 1 / 1 / 2 / 2;
@@ -854,6 +575,12 @@ main {
   z-index: 700;
   opacity: 0;
   transition: 0.4s ease;
+}
+
+@supports (display: grid) {
+  .grid > div > a .overlay {
+    display: grid;
+  }
 }
 
 .grid > div > a .overlay p {
@@ -1044,6 +771,9 @@ nav .bar {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   background-color: #023668;
 }
 
@@ -1071,6 +801,9 @@ nav .nav-sections.responsive {
   align-items: center;
   width: 100%;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 footer {
@@ -1128,15 +861,15 @@ footer .footer-container .footer-contact {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  flex: 100%;
   order: 1;
 }
 
 @media (min-width: 900px) {
   footer .footer-container .footer-contact {
     align-items: flex-start;
-    flex-wrap: row;
-    flex-basis: 33%;
+    flex-direction: row;
+    flex: 33%;
   }
 }
 
@@ -1156,7 +889,7 @@ footer .footer-container .footer-contact p {
 footer .footer-container .creator {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex: 100%;
   flex-wrap: wrap;
   max-width: 100%;
   order: 3;
@@ -1168,7 +901,7 @@ footer .footer-container .creator {
   footer .footer-container .creator {
     justify-content: center;
     flex-direction: row;
-    flex-basis: 33%;
+    flex: 33%;
     order: 2;
     align-self: flex-end;
   }
@@ -1183,7 +916,7 @@ footer .footer-container .social-media {
   order: 2;
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex: 100%;
   flex-wrap: wrap;
   align-items: center;
   margin-top: 2rem;
@@ -1191,7 +924,7 @@ footer .footer-container .social-media {
 
 @media (min-width: 900px) {
   footer .footer-container .social-media {
-    flex-basis: 33%;
+    flex: 33%;
     height: 100%;
     align-items: flex-end;
     order: 3;

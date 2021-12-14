@@ -5,12 +5,12 @@
 header {
   max-width: 100%;
   width: 100%;
-  display: flex;
+  @include flexbox();
   position: fixed;
   z-index: 1000;
 
   @include tablet {
-    justify-content: center;
+    @include justify-content(center);
   }
 }
 
@@ -18,9 +18,9 @@ nav {
   width: 100%;
   padding: 1rem 2rem;
   color: color("primary");
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
   overflow: hidden;
   backdrop-filter: blur(2px) saturate(181%);
   -webkit-backdrop-filter: blur(2px) saturate(181%);
@@ -35,18 +35,18 @@ nav {
 
   @include tablet {
     width: 1920px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    @include flexbox();
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(flex-start);
   }
 
   .logo {
-    display: flex;
-    align-items: center;
+    @include flexbox();
+    @include align-items(center);
     img {
-      display: flex;
-      align-self: center;
+      @include flexbox();
+      @include align-self(center);
       height: 60px;
     }
   }
@@ -55,10 +55,10 @@ nav {
     display: none;
 
     @include tablet {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include align-items(center);
       width: 100%;
     }
 
@@ -68,12 +68,12 @@ nav {
 
     .nav-links {
       list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
 
       @include tablet {
-        flex-direction: row;
+        @include flex-direction(row);
         padding-left: 4rem;
       }
 
@@ -126,8 +126,8 @@ nav {
     }
 
     .social-links {
-      display: flex;
-      align-items: center;
+      @include flexbox();
+      @include align-items(center);
       height: 100%;
       margin-top: -18px;
 
@@ -138,8 +138,8 @@ nav {
       a {
         margin: 0 1.5rem;
         padding: 1rem 0;
-        display: flex;
-        align-items: center;
+        @include flexbox();
+        @include align-items(center);
 
         img {
           height: 35px;
@@ -172,8 +172,10 @@ nav {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     background-color: color("primary");
 
     @include tablet {
@@ -194,10 +196,13 @@ nav {
   }
 
   .nav-sections.responsive {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
     width: 100%;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
   }
 }

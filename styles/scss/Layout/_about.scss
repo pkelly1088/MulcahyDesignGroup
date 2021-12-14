@@ -36,31 +36,31 @@ h1 {
   }
 
   .column-two-thirds {
-    flex: 100%;
+    @include flex(100%);
 
     @include tablet {
-      flex: 66%;
+      @include flex(66%);
     }
   }
 
   .column-one-third {
-    flex: 100%;
+    @include flex(100%);
 
     @include tablet {
-      flex: 32%;
+      @include flex(32%);
     }
   }
 
   .row {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+    @include justify-content(center);
     column-gap: 2rem;
 
     @include tablet {
-      flex-direction: row;
+      @include flex-direction(row);
     }
 
     img {

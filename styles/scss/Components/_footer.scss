@@ -14,22 +14,22 @@ footer {
   max-width: 100%;
   background: color("primary");
   color: color("white");
-  display: flex;
-  justify-content: center;
+  @include flexbox();
+  @include justify-content(center);
   padding: 2rem;
   margin-bottom: -1rem;
 
   .footer-container {
     width: 1920px;
-    display: flex;
-    flex-direction: column;
+    @include flexbox();
+    @include flex-direction(column);
     height: 100%;
-    align-items: center;
+    @include align-items(center);
 
     @include tablet {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include align-items(flex-start);
     }
 
     .title {
@@ -53,46 +53,46 @@ footer {
     }
 
     .footer-contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-basis: 100%;
-      order: 1;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include flex-wrap(wrap);
+      @include flex(100%);
+      @include flex-order(1);
 
       @include tablet {
-        align-items: flex-start;
-        flex-wrap: row;
-        flex-basis: 33%;
+        @include align-items(flex-start);
+        @include flex-direction(row);
+        @include flex(33%);
       }
       p {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(center);
         margin-bottom: 0.5rem;
 
         @include tablet {
-          justify-content: flex-start;
+          @include justify-content(flex-start);
         }
       }
     }
 
     .creator {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex-wrap: wrap;
+      @include flexbox();
+      @include flex-direction(column);
+      @include flex(100%);
+      @include flex-wrap(wrap);
       max-width: 100%;
-      order: 3;
+      @include flex-order(3);
       margin-top: 2rem;
       font-size: 1.2rem;
 
       @include tablet {
-        justify-content: center;
-        flex-direction: row;
-        flex-basis: 33%;
-        order: 2;
-        align-self: flex-end;
+        @include justify-content(center);
+        @include flex-direction(row);
+        @include flex(33%);
+        @include flex-order(2);
+        @include align-self(flex-end);
       }
 
       p {
@@ -102,28 +102,28 @@ footer {
 
     .social-media {
       max-width: 100%;
-      order: 2;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex-wrap: wrap;
-      align-items: center;
+      @include flex-order(2);
+      @include flexbox();
+      @include flex-direction(column);
+      @include flex(100%);
+      @include flex-wrap(wrap);
+      @include align-items(center);
       margin-top: 2rem;
 
       @include tablet {
-        flex-basis: 33%;
+        @include flex(33%);
         height: 100%;
-        align-items: flex-end;
-        order: 3;
+        @include align-items(flex-end);
+        @include flex-order(3);
         margin-top: 0;
       }
 
       .social-links {
-        display: flex;
-        flex-direction: row;
+        @include flexbox();
+        @include flex-direction(row);
         a {
-          display: flex;
-          align-items: center;
+          @include flexbox();
+          @include align-items(center);
           padding: 1rem;
 
           img {

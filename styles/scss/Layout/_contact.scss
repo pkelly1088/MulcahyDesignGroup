@@ -33,11 +33,11 @@ p {
   }
 
   .contact-area {
-    order: 2;
+    @include flex-order(2);
     justify-content: center;
 
     @media (min-width: 1056px) {
-      order: initial;
+      @include flex-order(1);
     }
   }
 
@@ -47,18 +47,18 @@ p {
   }
 
   .image-area {
-    order: 1;
+    @include flex-order(1);
 
     @media (min-width: 1056px) {
-      order: initial;
+      @include flex-order(2);
     }
   }
 
   .column-two-thirds {
-    flex: 100%;
+    @include flex(100%);
 
     @include phone {
-      flex: 66%;
+      @include flex(66%);
     }
   }
 
@@ -81,31 +81,31 @@ p {
   }
 
   .column-one-third {
-    flex: 100%;
+    @include flex(100%);
 
     @include phone {
-      flex: 32%;
+      @include flex(32%);
     }
   }
 
   .column-half {
-    flex: 100%;
+    @include flex(100%);
 
     @include phone {
-      flex: 49%;
+      @include flex(49%);
     }
   }
 
   .row {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+    @include justify-content(center);
     column-gap: 2rem;
 
     @include phone {
-      flex-direction: row;
+      @include flex-direction(row);
     }
 
     img {

@@ -29,7 +29,7 @@ main {
 }
 
 .grid {
-  display: grid;
+  @include display-grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin-right: auto;
@@ -37,7 +37,7 @@ main {
 
   > div {
     background: color("white");
-    display: grid;
+    @include display-grid;
 
     &::before {
       content: "";
@@ -51,7 +51,7 @@ main {
     }
 
     > a {
-      display: grid;
+      @include display-grid;
       text-decoration: none;
       color: color("white");
       img {
@@ -62,7 +62,7 @@ main {
         z-index: 600;
       }
       .overlay {
-        display: grid;
+        @include display-grid;
         justify-content: center;
         align-items: center;
         grid-area: 1 / 1 / 2 / 2;
@@ -73,8 +73,8 @@ main {
 
         p {
           padding: 1rem;
-          display: flex;
-          flex-wrap: wrap;
+          @include flexbox();
+          @include flex-wrap(wrap);
           font-weight: 400;
           font-size: 2.4rem;
           text-align: center;

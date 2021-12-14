@@ -46,25 +46,9 @@ input[type="button"] {
     border-color: color("accent");
     background-color: color("accent");
     outline: 0;
-    transition: ease-in 0.25s;
-  }
-}
-
-@each $name, $color in $colors {
-  .button.button-#{$name},
-  button.button-#{$name},
-  input[type="submit"].button-#{$name},
-  input[type="reset"].button-#{$name},
-  input[type="button"].button-#{$name} {
-    color: #fff;
-    background-color: $color;
-    border-color: $color;
-
-    &:hover,
-    :focus {
-      color: #fff;
-      background-color: lighten(color($name), 20%);
-      border-color: lighten(color($name), 20%);
-    }
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
   }
 }
