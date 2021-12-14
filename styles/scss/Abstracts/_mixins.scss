@@ -106,19 +106,19 @@
 @mixin align-items($value: stretch) {
   @if $value == flex-start {
     -webkit-box-align: start;
-       -moz-box-align: start;
-       -ms-flex-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
   } @else if $value == flex-end {
     -webkit-box-align: end;
-       -moz-box-align: end;
-       -ms-flex-align: end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
   } @else {
     -webkit-box-align: $value;
-       -moz-box-align: $value;
-       -ms-flex-align: $value;
+    -moz-box-align: $value;
+    -ms-flex-align: $value;
   }
   -webkit-align-items: $value;
-          align-items: $value;
+  align-items: $value;
 }
 
 @mixin align-self($value: auto) {
@@ -132,6 +132,14 @@
     -ms-flex-item-align: $value;
   }
   align-self: $value;
+}
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
 
 @mixin display-grid {

@@ -46,9 +46,6 @@ input[type="button"] {
     border-color: color("accent");
     background-color: color("accent");
     outline: 0;
-    transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+    @include transition(all 0.3s ease-in-out);
   }
 }
