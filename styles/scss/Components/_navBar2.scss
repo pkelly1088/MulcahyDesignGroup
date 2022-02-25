@@ -8,6 +8,13 @@ header {
   @include flexbox();
   position: fixed;
   z-index: 1000;
+  backdrop-filter: blur(2px) saturate(181%);
+  -webkit-backdrop-filter: blur(2px) saturate(181%);
+  background-color: rgba(255, 255, 255, 0.55);
+  @include transition(all 0.4s ease-in-out);
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
 
   @include tablet {
     @include justify-content(center);
@@ -22,13 +29,6 @@ nav {
   @include flex-direction(column);
   @include justify-content(center);
   overflow: hidden;
-  backdrop-filter: blur(2px) saturate(181%);
-  -webkit-backdrop-filter: blur(2px) saturate(181%);
-  background-color: rgba(255, 255, 255, 0.55);
-  @include transition(all 0.4s ease-in-out);
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.75);
-  }
 
   @include tablet {
     width: 1920px;
