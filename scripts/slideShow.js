@@ -11,7 +11,7 @@ const showSlides = () => {
     if (slideIndex === slides.length) {
         slideIndex = 0;
     }
-    setTimeout(showSlides, 10000);
+    setTimeout(showSlides, 8000);
 }
 
 window.onload = showSlides();
