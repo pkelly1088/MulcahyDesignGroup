@@ -8,12 +8,107 @@ main {
 }
 
 .bgImg {
-  background: url("../../../images/Projects/Wychmere Harbor Retreat/Edited/IMG_0523-edited.jpg")
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100vh;
   width: 100%;
+
+  .mySlides {
+    height: 100vh;
+    width: 100%;
+    display: none;
+  }
+
+  .slideOne {
+    background: url("../../../images/Projects/Chatham Harbor Cottage/154Shore-4.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .slideTwo {
+    background: url("../../../images/Projects/Wychmere Harbor Retreat/Edited/IMG_0523-edited.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .slideThree {
+    background: url("../../../images/Projects/Chatham Island Retreat/Edited/_DSC0561-edited.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+// .fadeOut {
+//   -webkit-animation-name: fadeOut;
+//   -webkit-animation-duration: 5s;
+//   animation-name: fadeOut;
+//   animation-duration: 5s;
+// }
+
+// @-webkit-keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

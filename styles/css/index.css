@@ -950,8 +950,49 @@ main {
 }
 
 .bgImg {
-  background: url("../../../images/Projects/Wychmere Harbor Retreat/Edited/IMG_0523-edited.jpg") no-repeat center center fixed;
-  background-size: cover;
   height: 100vh;
   width: 100%;
+}
+
+.bgImg .mySlides {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.bgImg .slideOne {
+  background: url("../../../images/Projects/Chatham Harbor Cottage/154Shore-4.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bgImg .slideTwo {
+  background: url("../../../images/Projects/Wychmere Harbor Retreat/Edited/IMG_0523-edited.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bgImg .slideThree {
+  background: url("../../../images/Projects/Chatham Island Retreat/Edited/_DSC0561-edited.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.05;
+  }
 }
