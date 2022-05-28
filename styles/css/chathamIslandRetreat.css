@@ -1044,6 +1044,36 @@ main {
   max-width: 100%;
 }
 
+.main-container .minor-row {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .main-container .minor-row {
+    flex-direction: row;
+  }
+}
+
+.main-container .minor-row .column-half {
+  flex: 100%;
+  padding-top: 1rem;
+}
+
+@media (min-width: 900px) {
+  .main-container .minor-row .column-half {
+    flex: 14%;
+  }
+}
+
+.main-container .minor-row img {
+  max-width: 100%;
+}
+
 .description h1 {
   margin-bottom: 1rem;
 }

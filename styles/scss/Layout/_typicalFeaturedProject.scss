@@ -81,6 +81,32 @@ main {
       max-width: 100%;
     }
   }
+
+  .minor-row {
+    max-width: 100%;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+    @include justify-content(center);
+    column-gap: 1rem;
+
+    @include tablet {
+      @include flex-direction(row);
+    }
+
+    .column-half {
+      @include flex(100%);
+      padding-top: 1rem;
+
+      @include tablet {
+        @include flex(14%);
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .description {

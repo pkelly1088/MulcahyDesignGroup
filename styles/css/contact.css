@@ -1077,6 +1077,11 @@ p {
   }
 }
 
+.main-container .required {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
 .main-container .submitBtn {
   display: block;
   margin: 1rem auto;
