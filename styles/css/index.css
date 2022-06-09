@@ -976,18 +976,18 @@ main {
   display: none;
 }
 
-.bgImg .slideOne {
+.bgImg .slideTwo {
   background: url("../../../images/Projects/Chatham Harbor Cottage/154Shore-4.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-.bgImg .slideTwo {
+.bgImg .slideThree {
   background: url("../../../images/Projects/Chatham Fire Terrace/Night Shots/2.JPG") no-repeat center center fixed;
   background-size: cover;
 }
 
-.bgImg .slideThree {
-  background: url("../../../images/Projects/Wychmere Harbor Retreat/Edited/IMG_0523-edited.jpg") no-repeat center center fixed;
+.bgImg .slideOne {
+  background: url("../../../images/Projects/Eldridge Point Overlook/FRONT_6.png") no-repeat center center fixed;
   background-size: cover;
 }
 

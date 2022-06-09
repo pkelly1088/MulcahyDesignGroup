@@ -86,7 +86,7 @@ main {
     max-width: 100%;
     @include flexbox();
     @include flex-wrap(wrap);
-    @include flex-direction(column);
+    @include flex-direction(row);
     @include justify-content(center);
     column-gap: 1rem;
 
@@ -95,7 +95,7 @@ main {
     }
 
     .column-half {
-      @include flex(100%);
+      @include flex(48%);
       padding-top: 1rem;
 
       @include tablet {

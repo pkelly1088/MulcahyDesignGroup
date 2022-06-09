@@ -1048,7 +1048,7 @@ main {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   column-gap: 1rem;
 }
@@ -1060,7 +1060,7 @@ main {
 }
 
 .main-container .minor-row .column-half {
-  flex: 100%;
+  flex: 48%;
   padding-top: 1rem;
 }
 
