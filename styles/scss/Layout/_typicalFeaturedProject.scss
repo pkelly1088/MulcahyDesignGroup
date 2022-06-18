@@ -166,6 +166,10 @@ main {
 .photo-gallery {
   margin-top: 0.5rem;
 
+  .project {
+    margin-top: 8rem;
+  }
+
   .column-two-thirds {
     @include flex-order(2);
 
